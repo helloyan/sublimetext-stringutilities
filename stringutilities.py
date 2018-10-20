@@ -586,3 +586,20 @@ class PhpObjectToArrayCommand(sublime_plugin.TextCommand):
                 result = "{}['{}']".format(fragments[0], fragments[1])
 
                 self.view.replace(edit, region, result)
+
+
+class CopySplitHexCommand(sublime_plugin.TextCommand):
+    #split hex string with 2 bytes
+    def run(self, edit):
+        for region in self.view.sel():
+            if not region.empty():
+                text = self.view.substr(region)
+                txt=' '.join([text[i:min(i+2,len(text))] for i in range(0,len(text),2)])
+                sublime.set_clipboard(txt)
+                #self.view.replace(edit, region, txt)
+
+    def enc(self):
+        if self.view.encoding() == 'Undefined':
+            return self.view.settings().get('default_encoding', 'UTF-8')
+        else:
+            return self.view.encoding()

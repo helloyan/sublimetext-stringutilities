@@ -18,6 +18,7 @@ StringUtilities is a Sublime Text 3 plugin, which adds to the editor useful stri
 * Convert From Base64
 * Convert To Hex
 * Convert From Hex
+* Copy Split Hex String
 * Convert HTML Color From Hex To RGB
 * Convert HTML Color From RGB To Hex
 * Calculate Selection MD5

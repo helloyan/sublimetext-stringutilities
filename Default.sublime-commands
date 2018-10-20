@@ -76,6 +76,10 @@
         "command": "convert_from_hex"
     },
     {
+        "caption": "String Utilities: Copy Split Hex String",
+        "command": "copy_split_hex"
+    },
+    {
         "caption": "String Utilities: Convert HTML Color Hex To RGB",
         "command": "convert_hex_to_rgb"
     },

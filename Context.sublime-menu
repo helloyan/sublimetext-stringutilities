@@ -92,6 +92,10 @@
                 "command": "convert_from_hex"
             },
             {
+                "caption": "Copy Split Hex String",
+                "command": "copy_split_hex"
+            },
+            {
                 "caption": "Convert HTML Color Hex To RGB",
                 "command": "convert_hex_to_rgb"
             },
@@ -253,6 +257,10 @@
             }
         ],
         "id": "context-convert"
+    },
+    {
+        "caption": "Copy Split Hex String",
+        "command": "copy_split_hex"
     },
     {
         "caption": "-",
